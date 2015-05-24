@@ -6,14 +6,17 @@ using System.Linq;
 using System.Web;
 using System.Web.Configuration;
 using System.Configuration;
+using System.Reflection;
 namespace MVCwithADO.NET.Models.DALs
 {
     public class ProductDal
     {
         public EnumerableRowCollection<DataRow> Get()
         {
-
-            SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["Northwind"].ConnectionString.ToString());
+            string assemblyPath = new Uri(Assembly.GetExecutingAssembly().CodeBase).AbsolutePath;
+            Configuration config = ConfigurationManager.OpenExeConfiguration(assemblyPath.Replace("%20"," "));
+            ConnectionStringsSection connectStrings = config.GetSection("connectionStrings") as ConnectionStringsSection;
+            SqlConnection conn = new SqlConnection(connectStrings.ConnectionStrings["Northwind"].ConnectionString.ToString());
             string sql = "select * from Products";
             DataSet ds = new DataSet();
             using (conn)
