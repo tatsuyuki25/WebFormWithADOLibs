@@ -7,6 +7,7 @@ using System.Web;
 using System.Web.Configuration;
 using System.Configuration;
 using System.Reflection;
+using System.IO;
 namespace MVCwithADO.NET.Models.DALs
 {
     public class ProductDal
