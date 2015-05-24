@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebFormWithADOLibs", "WebFormWithADOLibs\WebFormWithADOLibs.csproj", "{128CBF45-04D1-4CDF-AFEC-ED0FF6141602}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ADOLibs", "ADOLibs\ADOLibs.csproj", "{EB8056BE-DE0D-4B54-B0C0-C36CE3A656EB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{128CBF45-04D1-4CDF-AFEC-ED0FF6141602}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{128CBF45-04D1-4CDF-AFEC-ED0FF6141602}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{128CBF45-04D1-4CDF-AFEC-ED0FF6141602}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{128CBF45-04D1-4CDF-AFEC-ED0FF6141602}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EB8056BE-DE0D-4B54-B0C0-C36CE3A656EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB8056BE-DE0D-4B54-B0C0-C36CE3A656EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB8056BE-DE0D-4B54-B0C0-C36CE3A656EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB8056BE-DE0D-4B54-B0C0-C36CE3A656EB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
